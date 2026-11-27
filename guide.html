@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>User Guide · CRT Sync Camera</title>
+<meta name="description" content="How to film CRT screens with CRT Sync Camera: Detect, band parking, moiré, camera settings, Apple Log and editing.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header><img src="icon.png" alt=""><a href="./">CRT Sync Camera</a></header>
+<nav><a href="./">Home</a><a href="guide.html" aria-current="page">Guide</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+<h1>User Guide</h1>
+<p>Everything you need to film CRT monitors and TVs with CRT Sync Camera, from your first Detect to grading Apple Log footage.</p>
+
+<div class="card">
+<strong>On this page</strong>
+<ul>
+<li><a href="#why">Why CRTs roll on camera</a></li>
+<li><a href="#quick-start">Quick start</a></li>
+<li><a href="#detect">Detect</a></li>
+<li><a href="#band">Hiding the band</a></li>
+<li><a href="#refresh">Setting the refresh rate by hand</a></li>
+<li><a href="#moire">Reducing moiré</a></li>
+<li><a href="#looks">Looks and adjustments</a></li>
+<li><a href="#camera">Camera settings</a></li>
+<li><a href="#frame-rate">Frame rates and editing</a></li>
+<li><a href="#formats">Recording formats</a></li>
+<li><a href="#log">Apple Log</a></li>
+<li><a href="#photos">Photos</a></li>
+<li><a href="#tips">Tips for great CRT footage</a></li>
+</ul>
+</div>
+
+<h2 id="why">Why CRTs roll on camera</h2>
+<p>A CRT draws its picture one line at a time, top to bottom, many times a second (its <em>refresh rate</em>). Each spot on the screen glows brightly for a moment and then fades. A phone camera also reads its sensor from top to bottom. When the two don't line up, part of each frame catches the screen while it's dark, and that shows up as a dark bar that rolls through your video.</p>
+<p>CRT Sync measures your screen's exact refresh rate and times the camera to it. The shutter matches the screen as closely as the iPhone allows, which leaves only a thin line, and the frame rate is locked so that line stays put. The app then parks it just off the edge of the screen.</p>
+
+<h2 id="quick-start">Quick start</h2>
+<ol>
+<li>Turn on your CRT and give it a minute to warm up.</li>
+<li>Open CRT Sync and point your iPhone at the screen.</li>
+<li>Tap the green <strong>Detect</strong> button.</li>
+<li>Fit the screen inside the green box and hold still for about 15 seconds.</li>
+<li>When it's done, the app shows the refresh rate (for example 60.15 Hz), syncs the shutter and hides the band. Press record.</li>
+</ol>
+
+<h2 id="detect">Detect</h2>
+<p>Detect films the screen at three different frame rates and works out the refresh rate from how the flicker changes. It handles anything from about 45 to 130 Hz: NTSC and PAL TVs, VGA monitors, classic Macs, arcade monitors and more.</p>
+<ul>
+<li><strong>Fill the frame.</strong> The more of the picture is screen, the better. A bright, busy image (a desktop, a game) works better than a mostly black one.</li>
+<li><strong>Hold still.</strong> Handheld is fine, but rest your elbows or lean on something. A tripod is best.</li>
+<li><strong>Turn off room flicker.</strong> Some LED and fluorescent lights flicker too. If Detect gives an odd result, try with those lights off.</li>
+<li><strong>If it says "No clear CRT flicker found",</strong> get closer so the screen fills more of the frame, or turn up the CRT's brightness.</li>
+</ul>
+<p>Once you've detected a screen, tapping Detect again asks before recalibrating, so a stray tap doesn't throw away your settings.</p>
+
+<h2 id="band">Hiding the band</h2>
+<p>iPhone shutter speeds come in fixed steps, so most CRTs can't be matched exactly. What's left is a thin, slightly tilted line. After Detect, the app holds that line still and parks it just off-screen, so for most shots you won't see it at all.</p>
+<ul>
+<li><strong>Band slider:</strong> drag it to move the line. Use it if a sliver shows in a corner, or if you'd rather tuck the line somewhere else. The app remembers where you like it.</li>
+<li><strong>Drift:</strong> no CRT's refresh rate is perfectly steady. If the line slowly creeps back into view during a long take, drag it back. The app learns from each correction, and after one or two it usually stays put.</li>
+<li><strong>Moving the phone</strong> doesn't move the line, but changing the frame rate or the refresh rate does. Run Detect again if you change either a lot.</li>
+</ul>
+
+<h2 id="refresh">Setting the refresh rate by hand</h2>
+<p>Tap the Hz reading to type in a refresh rate, or tap <strong>Presets</strong> to choose from a list of computers, consoles and arcade boards. A preset gets you close; Detect is still more accurate, because real hardware is rarely exactly to spec. The <strong>Sync</strong> switch turns syncing off if you want a normal camera.</p>
+
+<h2 id="moire">Reducing moiré</h2>
+<p>Moiré is the wavy or rainbow pattern you get when the screen's dot or line pattern beats against the camera sensor. Open <strong>Adjustments</strong> and use the <strong>Moiré reducer</strong>:</p>
+<ul>
+<li><strong>Lens soften</strong> defocuses the lens slightly so the pattern can't form. Tap the screen to focus first, then add a little.</li>
+<li><strong>Color moiré</strong> removes rainbow patterns without softening detail.</li>
+</ul>
+<p>Moving a little closer or farther away, zooming slightly, or tilting the phone a few degrees also helps. Turning up <strong>Sharpness</strong> makes moiré worse.</p>
+
+<h2 id="looks">Looks and adjustments</h2>
+<p>Under <strong>Adjustments</strong> you'll find CRT looks (Vivid CRT, Arcade Punch, Warm Glow, Faded VHS, green and amber phosphor and more) and manual brightness, contrast, sharpness, vibrance, warmth, tint and fade. They apply to the preview, video and photos. <strong>Reset</strong> clears them.</p>
+
+<h2 id="camera">Camera settings</h2>
+<p>Open the camera settings panel for:</p>
+<ul>
+<li><strong>Focus:</strong> Auto, or Manual with a near-to-far slider. <strong>Focus peaking</strong> outlines what's in focus in yellow.</li>
+<li><strong>Exposure:</strong> slide to brighten or darken. While synced, the shutter is fixed to the CRT, so brightness is adjusted with ISO.</li>
+<li><strong>AE/AF lock:</strong> press and hold on the preview to lock focus and exposure at that point.</li>
+<li><strong>White balance:</strong> Auto, Lock (keeps the current setting) or Kelvin. Locking stops colours shifting as the picture on the CRT changes.</li>
+<li><strong>Frame rate and resolution:</strong> see <a href="#frame-rate">Frame rates and editing</a>.</li>
+<li><strong>Zoom:</strong> tap the zoom pill to switch between 1× and 2×, or drag it sideways for anything in between.</li>
+</ul>
+
+<h2 id="frame-rate">Frame rates and editing</h2>
+<p>To keep the band still, each video frame has to last a whole number of CRT refreshes. So the camera runs at a rate set by your CRT rather than exactly the rate you picked. On a 60.15 Hz Mac, for example:</p>
+<ul>
+<li>30 fps records at <strong>30.075 fps</strong> (two refreshes per frame).</li>
+<li>60 fps records at <strong>60.15 fps</strong> (one refresh per frame).</li>
+</ul>
+<p>The frame rate chip at the top shows the actual rate. In your editor, put the clip on a timeline at your normal frame rate (for example 29.97 or 30). Most editors conform it automatically: it plays a fraction of a percent faster or slower, which nobody will notice.</p>
+<p>Holding the band at 50 or 60 fps on a CRT faster than 60 Hz needs the camera's high-frame-rate mode, which the app switches to automatically. If it can't, you'll see "Can't hold the band at this frame rate": try 30 fps instead.</p>
+
+<h2 id="formats">Recording formats</h2>
+<ul>
+<li><strong>HEVC:</strong> the smallest files for the quality. A good default.</li>
+<li><strong>H.264:</strong> plays everywhere, larger files.</li>
+<li><strong>ProRes 422 and ProRes HQ</strong> (on iPhones that support ProRes): best for editing and grading, but several gigabytes per minute in 4K.</li>
+</ul>
+<p><strong>Bitrate</strong> (Standard, High, Max) sets the quality of HEVC and H.264. <strong>Resolution</strong> is 4K or HD.</p>
+
+<h2 id="log">Apple Log</h2>
+<p>On iPhones that support it, turn on <strong>Apple Log</strong> under Recording to capture flat, ungraded footage for colour grading in Final Cut Pro, DaVinci Resolve or Premiere Pro. Apply Apple's Log-to-Rec.709 LUT, or your own, in your editor.</p>
+<ul>
+<li>Log footage looks grey and washed out. That's normal. Turn on <strong>Show normal contrast in viewfinder</strong> to see a corrected preview while you shoot. The recording stays in Log.</li>
+<li>Looks and adjustments aren't applied to Log recordings. Lens soften still works, because it happens in the lens.</li>
+<li>Record Log in HEVC, ProRes 422 or ProRes HQ. Files are tagged as Apple Log, so editors recognise them.</li>
+<li>Photos are taken normally, not in Log.</li>
+</ul>
+
+<h2 id="photos">Photos</h2>
+<p>Switch to <strong>Photo</strong> mode for stills. Photos use the synced shutter, so they're band-free too, and include your look and adjustments.</p>
+
+<h2 id="tips">Tips for great CRT footage</h2>
+<ul>
+<li><strong>Use a tripod</strong> for long takes.</li>
+<li><strong>Turn the room lights down.</strong> Reflections on the curved glass show up more than you'd expect.</li>
+<li><strong>Set exposure for the screen,</strong> not the room. Press and hold on the screen to lock exposure there, then nudge it darker if the picture looks blown out.</li>
+<li><strong>Lock white balance</strong> so colours don't shift as the picture changes.</li>
+<li><strong>Shoot square-on</strong> to the screen to keep the image even; a slight angle can reduce moiré.</li>
+<li><strong>Run Detect again</strong> after switching to a different CRT, or after changing the computer's resolution or video mode.</li>
+</ul>
+
+<p class="muted">Still stuck? See <a href="support.html">Support</a>.</p>
+<footer>CRT Sync Camera · <a href="guide.html">Guide</a> · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a></footer>
+</main>
+</body>
+</html>
